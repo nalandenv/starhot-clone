@@ -1,11 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,400&display=swap');
 
 $bg-color: #0d111c;
-$fill-color: #a1a3a9;
+$fill-color: rgba(255, 255, 255, 0.6);
+$text-color: rgba(255, 255, 255, 0.8);
+$hover-color: #F9F9F9;
 $font-family: 'Roboto', sans-serif;
+$font-size: 18px;
 
 a,p,h1,h2,h3,h4,h5{
     font-family: $font-family;
+    text-decoration: none;
 }
 .row{
     display: flex;
@@ -23,6 +27,7 @@ body{
     padding: 0;
     color: $fill-color;
     fill: $fill-color;
+    font-size: $font-size;
 }
 header{
     position: fixed;
@@ -37,6 +42,7 @@ header{
         height: 66px;
         margin-top: 6px;
         padding: 0 50px;
+        // Hamburger menu properties
         .hamburger-menu{
             box-sizing: border-box;
             justify-content: space-between;
@@ -44,10 +50,41 @@ header{
             height: 52px;
             padding: 20px;
             margin-left: -10px;
+            cursor: pointer;
             .line{
                 width: 18px;
                 height: 2px;
-                background-color: rgba($color: #ffffff, $alpha: 0.6);
+                background-color: $fill-color;
+            }
+        }
+        // hotstar logo styles
+        .logo-container{
+            box-sizing: border-box;
+            width: 162px;
+            height: 62px;
+            cursor: pointer;
+                svg{
+                    width: inherit;
+                    height: 48px;
+                padding-bottom: 14px;
+                    
+                }
+        }
+        .nav-links{
+            font-weight: 500;
+            padding: 20px 15px;
+            color: $text-color;
+            &:hover{
+                color: $hover-color;
+            }
+        }
+        .nav-links-kids{
+            @extend .nav-links;
+            box-sizing: border-box;
+            width:90px;
+            height: 55px;
+            svg{
+                padding-right: 20px;
             }
         }
     }
