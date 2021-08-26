@@ -53,9 +53,12 @@ header .nav {
   height: 66px;
   margin-top: 6px;
   padding: 0 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-header .nav .hamburger-menu {
+header .nav .left-container .hamburger-menu {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-pack: justify;
@@ -68,13 +71,13 @@ header .nav .hamburger-menu {
   cursor: pointer;
 }
 
-header .nav .hamburger-menu .line {
+header .nav .left-container .hamburger-menu .line {
   width: 18px;
   height: 2px;
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-header .nav .logo-container {
+header .nav .left-container .logo-container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 162px;
@@ -82,30 +85,59 @@ header .nav .logo-container {
   cursor: pointer;
 }
 
-header .nav .logo-container svg {
+header .nav .left-container .logo-container svg {
   width: inherit;
   height: 48px;
   padding-bottom: 14px;
 }
 
-header .nav .nav-links, header .nav .nav-links-kids {
+header .nav .left-container .nav-links, header .nav .left-container .nav-links-kids {
   font-weight: 500;
   padding: 20px 15px;
   color: rgba(255, 255, 255, 0.8);
 }
 
-header .nav .nav-links:hover, header .nav .nav-links-kids:hover {
+header .nav .left-container .nav-links:hover, header .nav .left-container .nav-links-kids:hover {
   color: #F9F9F9;
 }
 
-header .nav .nav-links-kids {
+header .nav .left-container .nav-links-kids {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 90px;
   height: 55px;
 }
 
-header .nav .nav-links-kids svg {
+header .nav .left-container .nav-links-kids svg {
   padding-right: 20px;
+}
+
+header .nav .right-container .search {
+  width: 240px;
+  height: 32px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+header .nav .right-container .search .nav-search-input {
+  outline: none;
+  background: none;
+  border: none;
+  font-size: inherit;
+  caret-color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+header .nav .right-container .search:focus-within {
+  width: 340px;
+  border-bottom: 1px solid #1f80e0;
+}
+
+header .nav .right-container .search input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  font-weight: 500;
 }
 /*# sourceMappingURL=main.css.map */
