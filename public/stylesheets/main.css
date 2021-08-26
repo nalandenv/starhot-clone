@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap");
+a, p, h1, h2, h3, h4, h5 {
+  font-family: "Roboto", sans-serif;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,5 +21,53 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #a1a3a9;
+  fill: #a1a3a9;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0d111c;
+  width: 100%;
+  height: 72px;
+}
+
+header .nav {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 66px;
+  margin-top: 6px;
+  padding: 0 50px;
+}
+
+header .nav .hamburger-menu {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 58px;
+  height: 52px;
+  padding: 20px;
+  margin-left: -10px;
+}
+
+header .nav .hamburger-menu .line {
+  width: 18px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,12 @@
-$primary-color: #2c9cdd;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,400&display=swap');
 
+$bg-color: #0d111c;
+$fill-color: #a1a3a9;
+$font-family: 'Roboto', sans-serif;
+
+a,p,h1,h2,h3,h4,h5{
+    font-family: $font-family;
+}
 .row{
     display: flex;
     flex-direction: row;
@@ -8,6 +15,40 @@ $primary-color: #2c9cdd;
     display: flex;
     flex-direction: column;
 }
-.header-container{
-background-color: $primary-color;
+.center{
+    align-items: center;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: $fill-color;
+    fill: $fill-color;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $bg-color;
+    width: 100%;
+    height: 72px;
+    // Navbar css
+    .nav{
+        box-sizing: border-box;
+        height: 66px;
+        margin-top: 6px;
+        padding: 0 50px;
+        .hamburger-menu{
+            box-sizing: border-box;
+            justify-content: space-between;
+            width: 58px;
+            height: 52px;
+            padding: 20px;
+            margin-left: -10px;
+            .line{
+                width: 18px;
+                height: 2px;
+                background-color: rgba($color: #ffffff, $alpha: 0.6);
+            }
+        }
+    }
 }
