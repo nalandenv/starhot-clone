@@ -4,6 +4,9 @@ $bg-color: #0d111c;
 $fill-color: rgba(255,255,255,0.6);
 $text-color: rgba(255,255,255,0.8);
 $hover-color: #F9F9F9;
+$alt-color: #1f80e0;
+$round-corners: 4px;
+$circle: 9999px;
 $font-family: 'Roboto', sans-serif;
 $font-size: 18px;
 
@@ -93,11 +96,13 @@ header{
         }
         // right end content style navbar
         .right-container{
+            height: 62px;
             .search{
                 width: 240px;
                 height: 32px;
                 justify-content: space-between;
                 border-bottom: 1px solid $fill-color;
+                transition: all 200ms;
                 .nav-search-input{
                     outline: none;
                     background: none;
@@ -105,20 +110,42 @@ header{
                     font-size: inherit;
                     caret-color: $fill-color;
                     color: $fill-color;
+                    transition: all 200ms;
                     }
                     &:focus-within {
                         width: 340px;
-                        border-bottom: 1px solid #1f80e0;
-                }
+                        border-bottom: 1px solid $alt-color;
+                        transition: all 200ms;
+                   }
                 input::-webkit-input-placeholder{
                     color: $text-color;
                     font-size: 16px;
                     font-weight: 500;
                 }
+                span{
+                    width: 16px;
+                    align-self: center;
                 }
-                
-                
             }
+            .btn-subscribe{
+                background-color: $alt-color;
+                color: $text-color;
+                border-radius: $round-corners;
+                border: none;
+                font-weight: 700;
+                cursor: pointer;
+                font-family: $font-family;
+                margin: 15px 0 15px 20px;
+                padding: 0 12px;
+                height: 24px;
+            }
+            a{
+                font-weight: 500;
+                padding: 13px 0;
+                margin-left: 15px;
+                color: $text-color;
+            }
+        }
             
     }
 }

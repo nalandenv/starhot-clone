@@ -112,6 +112,10 @@ header .nav .left-container .nav-links-kids svg {
   padding-right: 20px;
 }
 
+header .nav .right-container {
+  height: 62px;
+}
+
 header .nav .right-container .search {
   width: 240px;
   height: 32px;
@@ -119,6 +123,8 @@ header .nav .right-container .search {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
 }
 
 header .nav .right-container .search .nav-search-input {
@@ -128,16 +134,47 @@ header .nav .right-container .search .nav-search-input {
   font-size: inherit;
   caret-color: rgba(255, 255, 255, 0.6);
   color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
 }
 
 header .nav .right-container .search:focus-within {
   width: 340px;
   border-bottom: 1px solid #1f80e0;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
 }
 
 header .nav .right-container .search input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.8);
   font-size: 16px;
   font-weight: 500;
+}
+
+header .nav .right-container .search span {
+  width: 16px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+header .nav .right-container .btn-subscribe {
+  background-color: #1f80e0;
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  margin: 15px 0 15px 20px;
+  padding: 0 12px;
+  height: 24px;
+}
+
+header .nav .right-container a {
+  font-weight: 500;
+  padding: 13px 0;
+  margin-left: 15px;
+  color: rgba(255, 255, 255, 0.8);
 }
 /*# sourceMappingURL=main.css.map */
