@@ -1,0 +1,23 @@
+{
+  "name": "starhot-clone",
+  "version": "1.0.0",
+  "description": "Hotstar clone app",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nalandenv/starhot-clone.git"
+  },
+  "keywords": [
+    "hotstar",
+    "clone"
+  ],
+  "author": "Nikhil Nalande",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nalandenv/starhot-clone/issues"
+  },
+  "homepage": "https://github.com/nalandenv/starhot-clone#readme"
+}
