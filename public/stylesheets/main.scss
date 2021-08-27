@@ -20,7 +20,11 @@ $font-size: 18px;
     display: flex;
     flex-direction: column;
 }
-
+@media  screen and (max-width: 900px){
+    .nav-links{
+        display: none;
+    }
+}
 a,p,h1,h2,h3,h4,h5{
     font-family: $font-family;
     text-decoration: none;
@@ -48,6 +52,7 @@ header{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 13;
     background-color: $bg-color;
     width: 100%;
     height: 72px;
@@ -58,6 +63,7 @@ header{
         width: max-content;
         top: 55px;
         left: 0;
+        z-index: 913;
         display: none;
         background-color: $dpd-color;
         border-radius: $round-corners;
@@ -192,10 +198,11 @@ header{
 .carousel{
     position: relative;
     margin-top: 72px;
-    height: 566px;
+    max-height: 566px;
     background-color: $bg-color;
     padding: 0 40px;
     cursor: pointer;
+    z-index: 1;
     &:hover > .navigation{
         display: block;
     }
@@ -229,8 +236,8 @@ header{
     }
         .card{
             @include row;
-            height: 562px;
-            padding: 0 10px;
+            max-height: 562px;
+            padding: 0;
             background-color: $cars-bg-color;
             border-radius: $round-corners-large;
             .left-title{
@@ -262,16 +269,36 @@ header{
                 }
             }
             .right-image{
+                position: relative;
                 box-sizing: border-box;
                 flex: 6;
-                background: url("../assets/images/rk.jpg");
-                background-size: cover;
                 border-bottom-right-radius: $round-corners-large;
                 border-top-right-radius: $round-corners-large;
+                img{
+                    width: 100%;
+                   max-width: 100%;
+                    border-bottom-right-radius: $round-corners-large;
+                    border-top-right-radius: $round-corners-large;
+                }
                 .gradient{
-                    width: 200px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 30%;
                     height: 100%;
+                    max-width: 100%;
                     background-image: linear-gradient(to right, $cars-bg-color, rgba(0,0,0,0));
+                }
+            }
+            @media  screen and (max-width: 1200px) {
+                .left-title{
+                    position: absolute;
+                    display: block;
+                    top: 50%;
+                    left: 10%;
+                    transform: translateY(-50%);
+                    font-size: 16px;
+                    z-index: 12;
                 }
             }
             
