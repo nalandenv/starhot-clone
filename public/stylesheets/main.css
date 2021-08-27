@@ -36,6 +36,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
   fill: rgba(255, 255, 255, 0.6);
   font-size: 18px;
+  background-color: #0d111c;
 }
 
 header {
@@ -222,10 +223,44 @@ header .nav .right-container a {
   height: 566px;
   background-color: #0d111c;
   padding: 0 40px;
+  cursor: pointer;
+}
+
+.carousel:hover > .navigation {
+  display: block;
 }
 
 .carousel .navigation {
   position: absolute;
+  display: none;
+  width: 100%;
+  margin: 0 -40px;
+  height: 100%;
+}
+
+.carousel .navigation button {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 2em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.carousel .navigation .left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.carousel .navigation .right-arrow {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .carousel .card {

@@ -42,6 +42,7 @@ body{
     color: $fill-color;
     fill: $fill-color;
     font-size: $font-size;
+    background-color: $bg-color;
 }
 header{
     position: fixed;
@@ -194,8 +195,37 @@ header{
     height: 566px;
     background-color: $bg-color;
     padding: 0 40px;
+    cursor: pointer;
+    &:hover > .navigation{
+        display: block;
+    }
     .navigation{
-position: absolute;
+        position: absolute;
+        display: none;
+        width: 100%;
+        margin: 0 -40px;
+        height: 100%;
+        
+        button{
+            background: none;
+            border: none;
+            color: $fill-color;
+            font-size: 2em;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .left-arrow{
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            transform: translateY(-50%)
+        }
+        .right-arrow{
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%)
+        }
     }
         .card{
             @include row;
