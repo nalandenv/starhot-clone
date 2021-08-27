@@ -58,7 +58,7 @@ header .dropdown {
   top: 55px;
   left: 0;
   display: none;
-  background-color: #1f2742;
+  background-color: #161c30;
   border-radius: 4px;
 }
 
@@ -214,5 +214,97 @@ header .nav .right-container a {
   padding: 13px 0;
   margin-left: 15px;
   color: rgba(255, 255, 255, 0.8);
+}
+
+.carousel {
+  position: relative;
+  margin-top: 72px;
+  height: 566px;
+  background-color: #0d111c;
+  padding: 0 40px;
+}
+
+.carousel .navigation {
+  position: absolute;
+}
+
+.carousel .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 562px;
+  padding: 0 10px;
+  background-color: #090c14;
+  border-radius: 10px;
+}
+
+.carousel .card .left-title {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel .card .left-title .title-card {
+  width: 90%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-right: 10px;
+}
+
+.carousel .card .left-title .title-card h1 {
+  font-size: 2em;
+  font-weight: 700;
+  color: white;
+  line-height: 54px;
+}
+
+.carousel .card .left-title .title-card h2 {
+  font-size: 1.125em;
+  padding-top: 10px;
+  line-height: 41px;
+}
+
+.carousel .card .left-title .title-card p {
+  font-size: 1.125em;
+  padding-top: 10px;
+  line-height: 1.5em;
+}
+
+.carousel .card .right-image {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
+  background: url("../assets/images/rk.jpg");
+  background-size: cover;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.carousel .card .right-image .gradient {
+  width: 200px;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#090c14), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to right, #090c14, rgba(0, 0, 0, 0));
 }
 /*# sourceMappingURL=main.css.map */

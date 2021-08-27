@@ -1,15 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,400&display=swap');
 
 $bg-color: #0d111c;
-$dpd-color: #1f2742;
+$dpd-color: #161c30;
+$cars-bg-color: #090c14;
 $fill-color: rgba(255,255,255,0.6);
 $text-color: rgba(255,255,255,0.8);
 $hover-color: #F9F9F9;
 $alt-color: #1f80e0;
 $round-corners: 4px;
+$round-corners-large: 10px;
 $circle: 9999px;
 $font-family: 'Roboto', sans-serif;
 $font-size: 18px;
+@mixin row {
+    display: flex;
+    flex-direction: row;
+}
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
 
 a,p,h1,h2,h3,h4,h5{
     font-family: $font-family;
@@ -177,4 +187,63 @@ header{
         }
             
     }
+}
+.carousel{
+    position: relative;
+    margin-top: 72px;
+    height: 566px;
+    background-color: $bg-color;
+    padding: 0 40px;
+    .navigation{
+position: absolute;
+    }
+        .card{
+            @include row;
+            height: 562px;
+            padding: 0 10px;
+            background-color: $cars-bg-color;
+            border-radius: $round-corners-large;
+            .left-title{
+                flex: 4;
+                @include row;
+                justify-content: flex-end;
+                padding-right: 10%;
+                align-items: center;
+                .title-card{
+                    width: 90%;
+                    height: fit-content;
+                    padding-right: 10px;
+                    h1{
+                        font-size: 2em;
+                        font-weight: 700;
+                        color: white;
+                        line-height: 54px;
+                    }
+                    h2{
+                        font-size: 1.125em;
+                        padding-top: 10px;
+                        line-height: 41px;
+                    }
+                    p{
+                        font-size: 1.125em;
+                        padding-top: 10px;
+                        line-height: 1.5em;
+                    }
+                }
+            }
+            .right-image{
+                box-sizing: border-box;
+                flex: 6;
+                background: url("../assets/images/rk.jpg");
+                background-size: cover;
+                border-bottom-right-radius: $round-corners-large;
+                border-top-right-radius: $round-corners-large;
+                .gradient{
+                    width: 200px;
+                    height: 100%;
+                    background-image: linear-gradient(to right, $cars-bg-color, rgba(0,0,0,0));
+                }
+            }
+            
+        }
 }
