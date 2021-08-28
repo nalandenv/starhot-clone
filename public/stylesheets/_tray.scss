@@ -30,8 +30,10 @@
         margin-right: 10px;
         border-radius: $round-corners;
         .thumbnail{
+            
             width: 220px;
             cursor: pointer;
+            
             img{
                 width: inherit;
                 border-radius: $round-corners;
@@ -46,6 +48,7 @@
                 left: 0;
                 top: -47px;
                 border-radius: $round-corners;
+                
             }
             &:hover > .details{
                 padding: 15px;
@@ -94,6 +97,13 @@
                     }
             }
         }
+        .wide{
+            width: 300px;
+            &:hover > img{
+                width: 400px;
+            }
+        }
+        
        }
        @mixin arrow-button{
             background:none;
@@ -126,5 +136,8 @@
                 }
            }
            
+    }
+    .wide-list{
+        height: 250px;
     }
 }

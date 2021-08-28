@@ -517,6 +517,14 @@ header .nav .right-container a {
   background-color: #0d111c;
 }
 
+.show-tray-list .show-list .thumbnail-container .wide {
+  width: 300px;
+}
+
+.show-tray-list .show-list .thumbnail-container .wide:hover > img {
+  width: 400px;
+}
+
 .show-tray-list .show-list .scroll-btn-left {
   position: absolute;
   left: 0;
@@ -543,6 +551,10 @@ header .nav .right-container a {
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(#0d111c));
   background: linear-gradient(to right, rgba(0, 0, 0, 0), #0d111c);
   cursor: pointer;
+}
+
+.show-tray-list .wide-list {
+  height: 250px;
 }
 
 footer .footer-container {
