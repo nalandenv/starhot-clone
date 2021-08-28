@@ -232,6 +232,15 @@ header .nav .right-container a {
   max-height: 566px;
   background-color: #0d111c;
   padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   cursor: pointer;
   z-index: 1;
 }
@@ -379,8 +388,7 @@ header .nav .right-container a {
 
 .show-tray-list {
   position: relative;
-  padding: 15px 0 45px 0;
-  margin-left: 40px;
+  padding: 15px 0 0 40px;
 }
 
 .show-tray-list .header-wrapper {
@@ -507,5 +515,33 @@ header .nav .right-container a {
 
 .show-tray-list .show-list .thumbnail-container .thumbnail:hover > .details .btn:hover {
   background-color: #0d111c;
+}
+
+.show-tray-list .show-list .scroll-btn-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.show-tray-list .show-list .scroll-btn-left:hover {
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#0d111c), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to right, #0d111c, rgba(0, 0, 0, 0));
+  cursor: pointer;
+}
+
+.show-tray-list .show-list .scroll-btn-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+.show-tray-list .show-list .scroll-btn-righthover {
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(#0d111c));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), #0d111c);
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

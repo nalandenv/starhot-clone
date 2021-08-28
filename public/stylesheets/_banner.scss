@@ -4,6 +4,8 @@
     max-height: 566px;
     background-color: $bg-color;
     padding: 0 40px;
+    @include row;
+    flex-wrap: nowrap;
     cursor: pointer;
     z-index: 1;
     &:hover > .navigation{

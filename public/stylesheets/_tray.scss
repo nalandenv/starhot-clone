@@ -1,7 +1,7 @@
+
 .show-tray-list{
     position: relative;
-    padding: 15px 0 45px 0;
-    margin-left: 40px;
+    padding: 15px 0 0 40px;
     .header-wrapper{
         z-index: 2;
         margin-top: 30px;
@@ -95,5 +95,36 @@
             }
         }
        }
+       @mixin arrow-button{
+            background:none;
+            border: none;
+            color: rgba(0,0,0,0);
+            font-weight: 700;
+            font-size: 2em;
+            z-index: 15;  
+        }
+           .scroll-btn-left{
+               position: absolute;
+               left: 0;
+               top: 0;
+               height: 100%;
+               &:hover{
+                color: white;
+                background: linear-gradient(to right, $bg-color,rgba(0,0,0,0));
+                cursor: pointer;
+           }
+           }
+           .scroll-btn-right{
+                position: absolute;
+                right: 0;
+                top: 0;
+                height: 100%;
+                &hover{
+                    color: white;
+                    background: linear-gradient(to right,rgba(0,0,0,0), $bg-color);
+                    cursor: pointer;
+                }
+           }
+           
     }
 }
