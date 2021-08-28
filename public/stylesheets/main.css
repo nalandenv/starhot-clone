@@ -544,4 +544,151 @@ header .nav .right-container a {
   background: linear-gradient(to right, rgba(0, 0, 0, 0), #0d111c);
   cursor: pointer;
 }
+
+footer .footer-container {
+  max-width: calc(100vw - 105px);
+  margin: 0 auto;
+  padding: 34px 0 24px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+footer .footer-container h5 {
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 7px;
+}
+
+footer .footer-container .footer-left {
+  width: 58%;
+}
+
+footer .footer-container .footer-left ul li {
+  display: inline-block;
+}
+
+footer .footer-container .footer-left ul li a {
+  color: inherit;
+  font-size: 14px;
+  padding-right: 20px;
+}
+
+footer .footer-container .footer-left ul li a:hover {
+  color: #1f80e0;
+}
+
+footer .footer-container .footer-left p {
+  padding: 11px 15% 0 0;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+footer .footer-container .footer-right {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  flex-direction: row-reverse;
+  padding-left: 20px;
+}
+
+footer .footer-container .footer-right .app-unit {
+  padding: 0 0 24px 30px;
+}
+
+footer .footer-container .footer-right .app-unit .store-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .footer-container .footer-right .app-unit .store-wrapper div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .footer-container .footer-right .app-unit .store-wrapper div .logo-container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 135px;
+  height: 40px;
+  cursor: pointer;
+}
+
+footer .footer-container .footer-right .app-unit .store-wrapper div .logo-container:nth-child(1) {
+  background: url("../assets/images/gp-dark.png");
+  margin-right: 5px;
+  padding-bottom: 5px;
+}
+
+footer .footer-container .footer-right .app-unit .store-wrapper div .logo-container:nth-child(1):hover {
+  background: url("../assets/images/gp-light.png");
+}
+
+footer .footer-container .footer-right .app-unit .store-wrapper div .logo-container:nth-child(2) {
+  background: url("../assets/images/ap-dark.png");
+}
+
+footer .footer-container .footer-right .app-unit .store-wrapper div .logo-container:nth-child(2):hover {
+  background: url("../assets/images/ap-light.png");
+}
+
+footer .footer-container .footer-right .social-unit {
+  width: 30%;
+}
+
+footer .footer-container .footer-right .social-unit div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .footer-container .footer-right .social-unit .icon-container {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+footer .footer-container .footer-right .social-unit .icon-container:nth-child(1) {
+  margin-right: 5px;
+  background: url("../assets/images/fb-dark.png");
+}
+
+footer .footer-container .footer-right .social-unit .icon-container:nth-child(1):hover {
+  background: url("../assets/images/fb-light.png");
+}
+
+footer .footer-container .footer-right .social-unit .icon-container:nth-child(2) {
+  background: url("../assets/images/tw-dark.png");
+}
+
+footer .footer-container .footer-right .social-unit .icon-container:nth-child(2):hover {
+  background: url("../assets/images/tw-light.png");
+}
 /*# sourceMappingURL=main.css.map */

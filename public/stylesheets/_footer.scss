@@ -1,0 +1,95 @@
+footer{
+    .footer-container{
+        max-width: calc(100vw - 105px);
+        margin: 0 auto;
+        padding: 34px 0 24px 0;
+        @include row;
+        justify-content: space-between;
+        color: $text-color;
+        h5{
+            font-weight: 500;
+            font-size: 16px;
+            padding-bottom: 7px;
+        }
+        .footer-left{
+            width: 58%;
+            ul{
+                li{
+                    display: inline-block;
+                    a{
+                        color: inherit;
+                        font-size: 14px;
+                        padding-right: 20px;
+                        &:hover{
+                            color: $alt-color;
+                        }
+                    }
+                }
+            }
+            p{
+                padding: 11px 15% 0 0;
+                font-size: 12px;
+                line-height: 1.8;
+            }
+        }
+        .footer-right{
+            width: 100%;
+            @include row;
+            flex-direction: row-reverse;
+            padding-left: 20px;
+            .app-unit{
+                padding: 0 0 24px 30px;
+                .store-wrapper{
+                    @include column;
+                    div{
+                        @include row;
+                        .logo-container{
+                            box-sizing: border-box;
+                            width: 135px;
+                            height: 40px;
+                            cursor: pointer;
+                        }
+                        .logo-container:nth-child(1){
+                            background: url("../assets/images/gp-dark.png");
+                            margin-right: 5px;
+                            padding-bottom: 5px;
+                            &:hover{
+                                background: url("../assets/images/gp-light.png");
+                            }
+                        }
+                        .logo-container:nth-child(2){
+                            background: url("../assets/images/ap-dark.png");
+                            &:hover{
+                                background: url("../assets/images/ap-light.png");
+                            }
+                        }
+                    }
+            }
+        }
+        .social-unit{
+            width: 30%;
+            div{
+                @include row;
+            }
+            .icon-container{
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+            }
+            .icon-container:nth-child(1){
+                margin-right: 5px;
+                background: url("../assets/images/fb-dark.png");
+                &:hover{
+                    background: url("../assets/images/fb-light.png");
+                }
+            }
+            .icon-container:nth-child(2){
+                background: url("../assets/images/tw-dark.png");
+                &:hover{
+                    background: url("../assets/images/tw-light.png");
+                }
+            }
+        }
+    }
+}
+}
