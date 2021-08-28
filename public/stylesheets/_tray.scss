@@ -1,0 +1,99 @@
+.show-tray-list{
+    position: relative;
+    padding: 15px 0 45px 0;
+    margin-left: 40px;
+    .header-wrapper{
+        z-index: 2;
+        margin-top: 30px;
+        h1{
+            line-height: 40px;
+            font-size: 1.5em;
+            font-weight: 700;
+            color: white;
+        }
+    }
+    .show-list{
+        position: relative;
+        margin: -40px 0 10px 0;
+        padding-top: 55px;
+        @include row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        height: 350px;
+        z-index: 2;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+       .thumbnail-container{
+        padding-bottom: 5px;
+        position: relative;
+        margin-right: 10px;
+        border-radius: $round-corners;
+        .thumbnail{
+            width: 220px;
+            cursor: pointer;
+            img{
+                width: inherit;
+                border-radius: $round-corners;
+            }
+            .details{
+                display: none;
+            }
+            &:hover > img{
+                z-index: 9;
+                width: 290px;
+                position: absolute;
+                left: 0;
+                top: -47px;
+                border-radius: $round-corners;
+            }
+            &:hover > .details{
+                padding: 15px;
+                    display: block;
+                    position: absolute;
+                    bottom: 10px;
+                    width: 260px;
+                    height: 100%;
+                    @include column;
+                    justify-content: flex-end;
+                    border-radius: $round-corners;
+                    left: 0;
+                    z-index: 10;
+                    color: white;
+                    background-image: linear-gradient(#212b4600, #212b46);;
+                    h3{
+                        font-weight: 700;
+                        line-height: 20px;
+                        font-size: $font-size;
+                    }
+                    h4{
+                        margin-top: 10px;
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+                    p{
+                        padding-top: 10px;
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 16px;
+                        line-height: 20px;
+                    }
+                    .btn{
+                        margin-top: 10px;
+                        background: none;
+                        color: $fill-color;
+                        font-weight: 700;
+                        padding: 5px;
+                        width: 100%;
+                        box-sizing: border-box;
+                        border: none;
+                        cursor: pointer;
+                        &:hover{
+                            background-color: $bg-color;
+                        }
+                    }
+            }
+        }
+       }
+    }
+}
