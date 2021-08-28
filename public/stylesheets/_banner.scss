@@ -1,0 +1,109 @@
+.carousel{
+    position: relative;
+    margin-top: 72px;
+    max-height: 566px;
+    background-color: $bg-color;
+    padding: 0 40px;
+    cursor: pointer;
+    z-index: 1;
+    &:hover > .navigation{
+        display: block;
+    }
+    .navigation{
+        position: absolute;
+        display: none;
+        width: 100%;
+        margin: 0 -40px;
+        height: 100%;
+        
+        button{
+            background: none;
+            border: none;
+            color: $fill-color;
+            font-size: 2em;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .left-arrow{
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            transform: translateY(-50%)
+        }
+        .right-arrow{
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%)
+        }
+    }
+        .card{
+            @include row;
+            max-height: 562px;
+            padding: 0;
+            background-color: $cars-bg-color;
+            border-radius: $round-corners-large;
+            .left-title{
+                flex: 4;
+                @include row;
+                justify-content: flex-end;
+                padding-right: 10%;
+                align-items: center;
+                .title-card{
+                    width: 90%;
+                    height: fit-content;
+                    padding-right: 10px;
+                    h1{
+                        font-size: 2em;
+                        font-weight: 700;
+                        color: white;
+                        line-height: 54px;
+                    }
+                    h2{
+                        font-size: 1.125em;
+                        padding-top: 10px;
+                        line-height: 41px;
+                    }
+                    p{
+                        font-size: 1.125em;
+                        padding-top: 10px;
+                        line-height: 1.5em;
+                    }
+                }
+            }
+            .right-image{
+                position: relative;
+                box-sizing: border-box;
+                flex: 6;
+                border-bottom-right-radius: $round-corners-large;
+                border-top-right-radius: $round-corners-large;
+                img{
+                    width: 100%;
+                   max-width: 100%;
+                    border-bottom-right-radius: $round-corners-large;
+                    border-top-right-radius: $round-corners-large;
+                }
+                .gradient{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 30%;
+                    height: 100%;
+                    max-width: 100%;
+                    background-image: linear-gradient(to right, $cars-bg-color, rgba(0,0,0,0));
+                }
+            }
+            @media  screen and (max-width: 1200px) {
+                .left-title{
+                    position: absolute;
+                    display: block;
+                    top: 50%;
+                    left: 10%;
+                    transform: translateY(-50%);
+                    font-size: 16px;
+                    z-index: 12;
+                }
+            }
+            
+        }
+}

@@ -1,0 +1,147 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 13;
+    background-color: $bg-color;
+    width: 100%;
+    height: 72px;
+    .dropdown{
+        font-weight: 400;
+        font-size: 14px;
+        position: absolute;
+        width: max-content;
+        top: 55px;
+        left: 0;
+        z-index: 913;
+        display: none;
+        background-color: $dpd-color;
+        border-radius: $round-corners;
+        li{
+            padding: 10px 20px;
+            &:hover{
+                background-color: #0d111c;
+                transition: width 2s;
+            }
+        }
+    }
+    /*Navbar css*/
+    .nav{
+        box-sizing: border-box;
+        height: 66px;
+        margin-top: 6px;
+        padding: 0 50px;
+        justify-content: space-between;
+        .left-container{
+            // Hamburger menu properties
+        .hamburger-menu{
+            box-sizing: border-box;
+            justify-content: space-between;
+            width: 58px;
+            height: 52px;
+            padding: 20px;
+            margin-left: -10px;
+            cursor: pointer;
+            .line{
+                width: 18px;
+                height: 2px;
+                background-color: $fill-color;
+            }
+            .dropdown{
+                left: 50px;
+            }
+            &:hover > .dropdown{
+                display: block;
+            }
+        }
+        // hotstar logo styles
+        .logo-container{
+            box-sizing: border-box;
+            width: 162px;
+            height: 62px;
+            cursor: pointer;
+                svg{
+                    width: inherit;
+                    height: 48px;
+                    padding-bottom: 14px;
+                }
+        }
+        .nav-links{
+            position: relative;
+            font-weight: 500;
+            padding: 20px 15px;
+            color: $text-color;
+            &:hover{
+                color: $hover-color;
+            }
+            
+            &:hover > .dropdown{
+                display: block;
+            }
+        }
+        
+        .nav-links-kids{
+            @extend .nav-links;
+            box-sizing: border-box;
+            width:90px;
+            height: 55px;
+            svg{
+                padding-right: 20px;
+            }
+        }
+        }
+        // right end content style navbar
+        .right-container{
+            height: 62px;
+            .search{
+                width: 240px;
+                height: 32px;
+                justify-content: space-between;
+                border-bottom: 1px solid $fill-color;
+                transition: all 200ms;
+                .nav-search-input{
+                    outline: none;
+                    background: none;
+                    border: none;
+                    font-size: inherit;
+                    caret-color: $fill-color;
+                    color: $fill-color;
+                    transition: all 200ms;
+                    }
+                    &:focus-within {
+                        width: 340px;
+                        border-bottom: 1px solid $alt-color;
+                        transition: all 200ms;
+                   }
+                input::-webkit-input-placeholder{
+                    color: $text-color;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+                span{
+                    width: 16px;
+                    align-self: center;
+                }
+            }
+            .btn-subscribe{
+                background-color: $alt-color;
+                color: $text-color;
+                border-radius: $round-corners;
+                border: none;
+                font-weight: 700;
+                cursor: pointer;
+                font-family: $font-family;
+                margin: 15px 0 15px 20px;
+                padding: 0 12px;
+                height: 24px;
+            }
+            a{
+                font-weight: 500;
+                padding: 13px 0;
+                margin-left: 15px;
+                color: $text-color;
+            }
+        }
+            
+    }
+}
